@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quote:Quotes[] = [
-    new Quotes(1,'faith','winston', 'Find an online version and watch merlin find his son',new Date(2020,3,14)),
+    new Quotes(1,'faith','winston Churchill', 'Find an online version and watch merlin find his son',new Date()),
     
 
   ];
@@ -19,7 +19,7 @@ export class QuotesComponent implements OnInit {
   deleteQuote(isRead, index){
     
     if (isRead) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quote[index].name}?`)
+      let toDelete = confirm(`Are you sure you want to delete quote posted by ${this.quote[index].name}?`)
 
       if (toDelete){
         this.quote.splice(index,1)

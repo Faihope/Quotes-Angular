@@ -2,10 +2,19 @@
     {{quotes.quote}}
 </p>
 <ul>
-    <li> ~ {{quotes.author}}</li>
-    <li>posted by {{quotes.name}} on {{quotes.completeDate}}</li>
-    <li>posted:{{quotes.completeDate|dateCount}} days ago</li>
+   
+    <h6 class="card-subtitle mb-2 text-muted"> - {{quotes.author}} <span id="when">Posted: {{quotes.completeDate|dateCount}} days ago.</span> </h6>
+    <li> posted by {{quotes.name}}</li>
+    
 </ul>
 
 
 <button (click)= ' deleteQuote(true)'>Delete Quote</button>
+
+
+<div class="container-fluid" id="buttons">
+  <button class="btn btn-sm btn-success" (click)='upvote()'>{{quotes.likes }} <i class="fa fa-thumbs-up" id="like"></i>upvote</button> 
+  <button class="btn btn-sm btn-primary" id="hate" (click)='downvote()'>{{quotes.dislikes }} <i class="fa fa-thumbs-down" id="dislike">downvote</i></button> 
+  <button (click)= ' deleteQuote(true)' class="btn btn-sm btn-danger">Delete Quote</button>
+
+</div> 
