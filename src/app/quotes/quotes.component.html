@@ -1,1 +1,13 @@
-<p>quotes works!</p>
+
+<div class="col-md-6">
+    <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+</div>
+<h1>My quotes</h1>
+<hr>
+<ul>
+  <div *ngFor='let quotes of quote;let i = index'>
+    <li>{{quotes.quote}}</li>
+    <button (click)='toggleDetails(i)'>Show Details</button>
+    <app-quote-details *ngIf='quotes.showDescription' [quotes]='quotes' (isRead) = 'isRead($event,i)'></app-quote-details>
+  </div>
+</ul>
