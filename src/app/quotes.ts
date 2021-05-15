@@ -1,7 +1,12 @@
+
+
 export class Quotes {
-    id:number;
-    name:string;
-    quote:string;
-    author:string;
+    showQuotes:boolean;
+
+    constructor(public id?:number,public name?:string,public author?:string,public quote?:string,public completeDate?: Date){
+        this.showQuotes=false;
+    }
+   
     
 }
+
