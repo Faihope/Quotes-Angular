@@ -6,17 +6,17 @@ import { Quotes } from "../quotes";
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  @Input() quote: Quotes;
+  @Input() quotes: Quotes;
   @Output() isRead = new EventEmitter<boolean>();
 
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
   upvote(){
-    this.quote.likes+=1;
+    this.quotes.likes+=1;
   }
   downvote(){
-    this.quote.dislikes+=1;
+    this.quotes.dislikes+=1;
   }
   constructor() { }
 
