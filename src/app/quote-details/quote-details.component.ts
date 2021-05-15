@@ -13,10 +13,10 @@ export class QuoteDetailsComponent implements OnInit {
     this.isRead.emit(read);
   }
   upvote(){
-    this.quotes.likes+=1;
+    this.quotes.upvote+=1;
   }
   downvote(){
-    this.quotes.dislikes+=1;
+    this.quotes.downvote+=1;
   }
   constructor() { }
 

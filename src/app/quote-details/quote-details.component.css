@@ -1,0 +1,14 @@
+.btn-success{
+    margin-right: 5% auto;
+}
+.container-fluid{
+    
+    margin: 2% auto;
+   
+}
+.container-fluid>.btn-success{
+    margin-right: 3%;
+}
+.container-fluid>.btn-primary{
+    margin-right: 3%;
+}
