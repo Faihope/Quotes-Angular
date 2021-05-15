@@ -1,6 +1,5 @@
-
-<div class="col-md-6">
-    <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+<div class="col-md-4">
+  <app-forms (addQuote)="addNewQuote($event)"></app-forms>
 </div>
 <h1>My quotes</h1>
 <hr>
@@ -8,6 +7,6 @@
   <div *ngFor='let quotes of quote;let i = index'>
     <li>{{quotes.quote}}</li>
     <button (click)='showDetails(i)'>Show Details</button>
-    <app-quote-details  *ngIf='quotes.showQuotes' [quotes]='quotes' ></app-quote-details>
+    <app-quote-details *ngIf='quotes.showQuotes' [quotes]='quotes'></app-quote-details>
   </div>
 </ul>
