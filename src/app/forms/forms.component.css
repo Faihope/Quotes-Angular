@@ -3,6 +3,7 @@
     background: transparent;
     font-weight: 570;
   }
+
   label{
     color: white;
     font-weight: 600;
@@ -18,13 +19,20 @@
     padding-top: 2%;
   }
   .container-fluid{
-    background-color: rgba(0, 0, 0, 0.374);
+    background-color: rgba(182, 125, 125, 0.374);
     border-radius: 4px;
     padding-bottom: 5%;
     box-shadow: 2px 2px 3px 2px black;
     font-family: 'Architects Daughter', cursive;
     margin-bottom: 5%;
-    width: 40%;
-    margin-top: 3%;
+    margin-left: 10% ;
+    margin-top: 3% ;
+    width: 80%;
   }
+  /* .away{
+   background-color: rgb(120, 173, 69);
+   
+   width: 80%;
+    
+  } */
   

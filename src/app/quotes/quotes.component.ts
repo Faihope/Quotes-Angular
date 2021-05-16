@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quote:Quotes[] = [
-    new Quotes(1,'Faith','— John F. Kennedy', 'Life is never easy. There is work to be done and obligations to be met – obligations to truth, to justice, and to liberty. ',new Date()),
+    new Quotes(1,'Faith','— John F. Kennedy', 'Life is never easy. There is work to be done and obligations to be met – obligations to truth, to justice, and to liberty. ',new Date(),0,0),
     
 
   ];

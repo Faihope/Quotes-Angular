@@ -8,14 +8,15 @@ import { Quotes } from "../quotes";
 export class QuoteDetailsComponent implements OnInit {
   @Input() quotes: Quotes;
   @Output() isRead = new EventEmitter<boolean>();
-
+upvote:number=0;
+downvote:number=0;
   deleteQuote(read:boolean){
     this.isRead.emit(read);
   }
-  upvote(){
+  upVote(){
     this.quotes.upvote+=1;
   }
-  downvote(){
+  downVote(){
     this.quotes.downvote+=1;
   }
   constructor() { }
