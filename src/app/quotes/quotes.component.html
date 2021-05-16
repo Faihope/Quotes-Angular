@@ -1,20 +1,19 @@
-<h1 class="heading">My quotes</h1>
-<hr>
-
-
-
-
-
-<div class="col-md-4">
-  <app-forms (addQuote)="addNewQuote($event)"></app-forms>
-
-
-  <ul>
-    <div *ngFor='let quotes of quote;let i = index'>
-      <li>{{quotes.quote}}</li>
-      <button (click)='showDetails(i)'>Show Details</button>
-      <app-quote-details *ngIf='quotes.showQuotes' [quotes]='quotes' (isRead)='deleteQuote($event,i)'>
-      </app-quote-details>
+<div class="container">
+  <h1>My quotes</h1>
+  <hr>
+  <div class="row">
+    <div class="col-md-6">
+      <app-forms (addQuote)="addNewQuote($event)"></app-forms>
     </div>
-  </ul>
+    <div class="col-md-6">
+
+      <div *ngFor='let quotes of quote;let i = index'>
+        {{quotes.quote}} <br>
+        <button (click)='showDetails(i)'>Show Details</button>
+        <app-quote-details *ngIf='quotes.showQuotes' [quotes]='quotes' (isRead)='deleteQuote($event,i)'>
+        </app-quote-details>
+      </div>
+    </div>
+  </div>
+
 </div>

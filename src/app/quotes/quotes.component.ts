@@ -15,7 +15,7 @@ export class QuotesComponent implements OnInit {
   showDetails(index){
     this.quote[index].showQuotes = !this.quote[index].showQuotes;
   }
-  
+
   deleteQuote(isRead, index){
     
     if (isRead) {
