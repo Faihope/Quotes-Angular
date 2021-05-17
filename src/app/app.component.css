@@ -1,6 +1,7 @@
-.container{
-    background-color: deepskyblue;
+.container {
+  background-color: bisque;
   margin-top: 3%;
-    position: relative;
-    height: 70%;
+  position: relative;
+  height: auto;
+  width: 100%;
 }

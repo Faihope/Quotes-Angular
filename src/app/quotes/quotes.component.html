@@ -9,7 +9,7 @@
 
       <div *ngFor='let quotes of quote;let i = index'>
         {{quotes.quote}} <br>
-        <button (click)='showDetails(i)'>Show Details</button>
+        <button (click)='showDetails(i)' class="btn btn-primary">Show Details</button>
         <app-quote-details *ngIf='quotes.showQuotes' [quotes]='quotes' (isRead)='deleteQuote($event,i)'>
         </app-quote-details>
       </div>
