@@ -1,7 +1,6 @@
-<hr>
-<p>
+<!-- <p>
   {{quotes.quote}}
-</p>
+</p> -->
 
 <ul>
 
@@ -12,12 +11,12 @@
 </ul>
 
 <div class="container-fluid " id="buttons ">
- 
+
   <button class="btn btn-sm btn-success" (click)='upVote()'>{{quotes.upvote}} <i id="upvote"></i>upvote</button>
 
-<button class="btn btn-sm btn-warning" id="downvote" (click)='downVote()'>{{quotes.downvote }} <i
-    id="dislike"></i>downvote</button>
-<button (click)=' deleteQuote(true)' class="btn btn-sm btn-danger" id="delete">Delete Quote</button>
+  <button class="btn btn-sm btn-secondary" id="downvote" (click)='downVote()'>{{quotes.downvote }} <i
+      id="dislike"></i>downvote</button>
+  <button (click)=' deleteQuote(true)' class="btn btn-sm btn-danger" id="delete">Delete Quote</button>
 
 </div>
 <hr>
