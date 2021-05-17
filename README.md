@@ -20,6 +20,6 @@ Angular
 Git
 Bootstrap
 ### Live Site
-View [live](https://faihope.github.io/pizza-home//)
+View [live](https://faihope.github.io/Quotes-Angular/)
 ### License
 This project is under the  [MIT](license) licence
