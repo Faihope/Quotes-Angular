@@ -1,15 +1,9 @@
-<!-- <p>
-  {{quotes.quote}}
-</p> -->
-
 <ul>
-
   <h6 class="card-subtitle mb-2 "> - {{quotes.author}} <span id="when">Posted:
       {{quotes.completeDate|dateCount}} days ago.</span> </h6>
   <li> posted by: {{quotes.name}} </li>
 
 </ul>
-
 <div class="container-fluid " id="buttons ">
 
   <button class="btn btn-sm btn-success" (click)='upVote()'>{{quotes.upvote}} <i id="upvote"></i>upvote</button>
